@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Jorge Gracia" />
+  <meta name="keywords" content="Museum, explore, video, API" />
+  <meta name="description" content="Explore the exhibition at MonoMuse" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/style.css" />
+  <script src="../static/script.js" defer></script>
+
+  <title>MonoMuse — Explore</title>
+</head>
+
+<body>
+  <header class="siteHeader">
+    <div class="headerInner">
+      <h1 id="webname">MonoMuse</h1>
+      <nav class="siteNav" aria-label="Primary">
+        <a class="navLink" href="../index.html">Home</a>
+        <!-- <a class="navLink cta" href="./tickets.html">Buy Tickets</a> -->
+        <a href="./tickets-start.html" class="cta">Buy Tickets</a>
+
+        <a class="navLink" href="./checkout.html">Checkout</a>
+        <a class="navLink" href="./visit.html">Plan Your Visit</a>
+        <a class="navLink" href="./exhibitions.html">Exhibitions</a>
+        <a class="navLink" href="./explore.html">Explore</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <h2>Explore</h2>
+    <p class="lead">A clean companion page for media + an interactive feature.</p>
+
+    <div class="mainLayout">
+      <div class="item1 card">
+        <h3>Exhibition Highlights</h3>
+        <ul class="simpleList">
+          <li>One narrative thread</li>
+          <li>Clear wayfinding</li>
+          <li>Tickets always visible</li>
+        </ul>
+        <a class="button primary" href="./tickets.html">Buy Tickets</a>
+      </div>
+
+      <div class="item2 card">
+        <h3>Feature Image</h3>
+        <img class="featureIMG" src="../static/feature.jpg" alt="Featured exhibition image">
+      </div>
+
+      <div class="item3 card">
+        <h3>Short Video</h3>
+        <div class="embed">
+          <iframe
+            title="Museum video"
+            src="https://www.youtube.com/embed/IUaMeCO_eJc?si=mHrLHuuI2hKH3kVR"
+
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <!-- <p class="helper subtle">Swap the embed link to any museum-related video.</p> -->
+      </div>
+
+      <div class="item4 card">
+        <h3>Curator Note</h3>
+        <p id="adviceText">Click the button for a short “curator note” (Advice API).</p>
+        <button id="adviceBtn" class="button ghost" type="button">Get Curator Note</button>
+        <p id="adviceErr" class="helper"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="siteFooter">
+    <p>© <span id="copyYear"></span> MonoMuse. All rights reserved.</p>
+  </footer>
+</body>
+</html>

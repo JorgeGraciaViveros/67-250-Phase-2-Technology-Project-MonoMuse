@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Jorge Gracia" />
+  <meta name="keywords" content="Museum, tickets, checkout" />
+  <meta name="description" content="Buy tickets for MonoMuse" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/style.css" />
+  <script src="../static/script.js" defer></script>
+
+  <title>MonoMuse — Tickets</title>
+</head>
+
+<body>
+  <header class="siteHeader">
+    <div class="headerInner">
+      <h1 id="webname">MonoMuse</h1>
+      <nav class="siteNav" aria-label="Primary">
+        <a class="navLink" href="../index.html">Home</a>
+        <!-- <a class="navLink cta" href="./tickets.html">Buy Tickets</a> -->
+        <a href="./tickets-start.html" class="cta">Buy Tickets</a>
+
+        <a class="navLink" href="./checkout.html">Checkout</a>
+        <a class="navLink" href="./visit.html">Plan Your Visit</a>
+        <a class="navLink" href="./exhibitions.html">Exhibitions</a>
+        <a class="navLink" href="./explore.html">Explore</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <h2>Buy Tickets</h2>
+    <p class="smallNote">
+        Tip: If you haven’t reviewed ticket policies yet, return to the Tickets start page.
+        <a href="./tickets-start.html">Back to start</a>
+      </p>
+      
+    <p class="lead">
+      Simple options. Clear pricing. Fewer steps.
+    </p>
+
+    <div class="card">
+      <button id="showTicketsBtn" class="button primary" type="button">
+        Click to view ticket options
+      </button>
+
+      <table id="ticketTable" class="ticketTable hidden" aria-label="Ticket Options">
+        <thead>
+          <tr>
+            <th>Ticket Type</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>General</td>
+            <td>Adult admission for the featured exhibition</td>
+            <td>$18</td>
+          </tr>
+          <tr>
+            <td>Student</td>
+            <td>Valid student ID required</td>
+            <td>$12</td>
+          </tr>
+          <tr>
+            <td>Child</td>
+            <td>Ages 6–12</td>
+            <td>$8</td>
+          </tr>
+          <tr>
+            <td>Member</td>
+            <td>Free admission (membership verification)</td>
+            <td>$0</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="heroActions">
+        <a class="button primary" href="./checkout.html">Go to Checkout</a>
+        <a class="button ghost" href="./visit.html">Check Hours</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="siteFooter">
+    <p>© <span id="copyYear"></span> MonoMuse. All rights reserved.</p>
+  </footer>
+</body>
+</html>

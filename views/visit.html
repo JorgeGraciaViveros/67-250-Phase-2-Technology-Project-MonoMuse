@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Jorge Gracia" />
+  <meta name="keywords" content="Museum, visit, hours, directions" />
+  <meta name="description" content="Plan your visit to MonoMuse" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/style.css" />
+  <script src="../static/script.js" defer></script>
+
+  <title>MonoMuse — Plan Your Visit</title>
+</head>
+
+<body>
+  <header class="siteHeader">
+    <div class="headerInner">
+      <h1 id="webname">MonoMuse</h1>
+      <nav class="siteNav" aria-label="Primary">
+        <a class="navLink" href="../index.html">Home</a>
+        <!-- <a class="navLink cta" href="./tickets.html">Buy Tickets</a> -->
+        <a href="./tickets-start.html" class="cta">Buy Tickets</a>
+
+        <a class="navLink" href="./checkout.html">Checkout</a>
+        <a class="navLink" href="./visit.html">Plan Your Visit</a>
+        <a class="navLink" href="./exhibitions.html">Exhibitions</a>
+        <a class="navLink" href="./explore.html">Explore</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <h2>Plan Your Visit</h2>
+
+    <section class="card">
+      <h3>Hours</h3>
+      <ul class="simpleList">
+        <li>Mon–Thu: 11am–6pm</li>
+        <li>Fri: 11am–8pm</li>
+        <li>Sat–Sun: 10am–6pm</li>
+      </ul>
+
+      <h3>Location</h3>
+      <p class="lead">500 Example Ave, Pittsburgh, PA</p>
+
+      <h3>Find Us</h3>
+      <div class="embed">
+        <iframe
+          title="Map"
+          src="https://www.google.com/maps?q=Carnegie%20Mellon%20University&output=embed"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>ZIP Code Lookup</h3>
+      <p class="helper">Enter a ZIP code to display the city/state (demo API).</p>
+      <div class="row">
+        <input id="zipInput" type="text" inputmode="numeric" pattern="[0-9]{5}" placeholder="e.g., 15213">
+        <button id="zipBtn" class="button ghost" type="button">Check</button>
+      </div>
+      <p id="zipResult" class="helper"></p>
+    </section>
+  </main>
+
+  <footer class="siteFooter">
+    <p>© <span id="copyYear"></span> MonoMuse. All rights reserved.</p>
+  </footer>
+</body>
+</html>

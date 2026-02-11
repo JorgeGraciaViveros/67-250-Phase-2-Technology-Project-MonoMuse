@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Jorge Gracia" />
+  <meta name="keywords" content="Museum, exhibition, tickets, visit" />
+  <meta name="description" content="Minimal museum website redesign project" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font (Roboto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/style.css" />
+  <script src="./static/script.js" defer></script>
+
+  <title>MonoMuse — Home</title>
+</head>
+
+<body>
+  <header class="siteHeader">
+    <div class="headerInner">
+      <h1 id="webname">MonoMuse</h1>
+      <nav class="siteNav" aria-label="Primary">
+        <a class="navLink" href="./index.html">Home</a>
+        <!-- <a class="navLink cta" href="./views/tickets.html">Buy Tickets</a> -->
+        <a href="./views/tickets-start.html" class="cta">Buy Tickets</a>
+
+        <a class="navLink" href="./views/checkout.html">Checkout</a>
+        <a class="navLink" href="./views/visit.html">Plan Your Visit</a>
+        <a class="navLink" href="./views/exhibitions.html">Exhibitions</a>
+        <a class="navLink" href="./views/explore.html">Explore</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <p class="kicker">A small museum with one major theme</p>
+      <h2 id="greeting">Welcome to MonoMuse</h2>
+      <p class="lead">
+        One exhibition. One story. A simpler way to plan a visit—and an even simpler way to buy tickets.
+      </p>
+
+      <div class="heroActions">
+        <a class="button primary" href="./views/tickets.html">Buy Tickets</a>
+        <a class="button ghost" href="./views/visit.html">Plan Your Visit</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Now Showing: “One Theme, Many Angles”</h3>
+
+      <p id="shortIntro">
+        Minimal content, maximal clarity. Explore the exhibit in minutes—then step into it in person.
+      </p>
+
+      <p id="longIntro" class="hidden">
+        This redesign intentionally focuses on the behaviors we saw in user data: people struggled to find tickets,
+        and the funnel felt longer than necessary. The site structure reduces clutter, prioritizes the ticket call-to-action,
+        and keeps navigation consistent across pages to prevent drop-off.
+      </p>
+
+      <div class="inlineActions">
+        <button id="readMoreBtn" class="linkButton" type="button">Read more</button>
+        <button id="readLessBtn" class="linkButton hidden" type="button">Read less</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Quick Links</h3>
+      <ul class="simpleList">
+        <li><a href="./views/tickets.html">Tickets & pricing</a></li>
+        <li><a href="./views/visit.html">Hours, location, and directions</a></li>
+        <li><a href="./views/exhibitions.html">Exhibition overview</a></li>
+        <li><a href="./views/explore.html">Video + interactive feature</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="siteFooter">
+    <p>© <span id="copyYear"></span> MonoMuse. All rights reserved.</p>
+  </footer>
+</body>
+</html>

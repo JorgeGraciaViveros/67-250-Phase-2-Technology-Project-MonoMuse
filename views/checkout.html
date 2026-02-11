@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Jorge Gracia" />
+  <meta name="keywords" content="Museum, checkout" />
+  <meta name="description" content="Checkout for MonoMuse tickets" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/style.css" />
+  <script src="../static/script.js" defer></script>
+
+  <title>MonoMuse — Checkout</title>
+</head>
+
+<body>
+  <header class="siteHeader">
+    <div class="headerInner">
+      <h1 id="webname">MonoMuse</h1>
+      <nav class="siteNav" aria-label="Primary">
+        <a class="navLink" href="../index.html">Home</a>
+        <!-- <a class="navLink cta" href="./tickets.html">Buy Tickets</a> -->
+        <a href="./tickets-start.html" class="cta">Buy Tickets</a>
+
+        <a class="navLink" href="./checkout.html">Checkout</a>
+        <a class="navLink" href="./visit.html">Plan Your Visit</a>
+        <a class="navLink" href="./exhibitions.html">Exhibitions</a>
+        <a class="navLink" href="./explore.html">Explore</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <h2>Checkout</h2>
+
+    <section class="card">
+      <form id="checkoutForm" class="checkoutForm">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your full name" required>
+
+        <label for="email">Email</label>
+        <div class="row">
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <button id="checkEmailBtn" class="button ghost" type="button">Check Email</button>
+        </div>
+        <p id="emailMsg" class="helper"></p>
+
+        <label for="qty">Ticket Quantity</label>
+        <input id="qty" name="qty" type="number" min="1" max="10" value="1" required>
+
+        <button class="button primary" type="submit">Submit</button>
+        <p class="helper subtle">This form is for the course project (no real payment).</p>
+
+        <label>
+            <input type="checkbox" id="confirmPolicy" />
+            I have read the policies and confirm my selection.
+          </label>
+
+          <label for="humanCheck">Human check: What is 3 + 4?</label>
+<input type="text" id="humanCheck" name="humanCheck" placeholder="Enter answer" />
+<p id="humanMsg" class="smallNote"></p>
+
+
+
+    <button type="submit" id="submitBtn" disabled>Submit Order</button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer class="siteFooter">
+    <p>© <span id="copyYear"></span> MonoMuse. All rights reserved.</p>
+  </footer>
+</body>
+</html>
