@@ -1,113 +1,79 @@
-**Phase 2 Specification**
+**67-250 Technology Project — Museum Website Analysis & Redesign: Phase 2 Specification**
 
-Technology Project: Museum Website Analysis & Redesign
-Phase 2 - Solution Design & Implementation
 
-1. Purpose of Phase 2
+In this project, you will move through a real workflow used in analytics and product teams: data → diagnosis → design → implementation
 
-The purpose of Phase 2 of the Technology Project is to translate a data-identified usability problem into a clear and functional front-end solution. Based on the dataset and project criteria, the core problem motivating this redesign is:
+Your job is to use user interaction data to identify a usability problem on a museum website and then build a front-end redesign that directly addresses that problem.
 
-- Users struggle to find ticket-related information and the purchase funnel is longer or more confusing than necessary
+By the end of the project you will submit:
 
-Hence, Phase 2 focuses on designing and implementing a museum website that fulfills the following:
+1) Data Analysis Report (Phase 1 outcome)
 
-- Prioritizes key user objectives
+2) Redesigned Website (Phase 2 outcome)
 
-- Reduces navigation depth and decision fatigue
+A working front-end redesign that includes:
 
-- Makes the “Buy Tickets” action obvious, persistent, and low-friction
+- Clear navigation and information structure
 
-- Demonstrates clear alignment between problem -> design -> implementation
+- A smoother experience for the task you’re improving (based on Phase 1)
 
-- Clarity, structure, and usability takes precedence over visual polishing
+- Responsive layout (desktop + mobile)
 
-2. Primary User Objectives
+- JavaScript interactions
 
-The redesigned website is organized around the following user objectives:
+- Embedded media/maps and at least one API feature
 
-A. Sell tickets: Users should be able to easily locate ticket information and move into checkout with minimal friction.
+Project structure (8 increments)
 
-B. Provide logistical information: Users should quickly be able to find hours, location, and transportation details to plan a visit.
+This project is completed in two phases across eight incremental labs.
 
-C. Provide information about the exhibition(s): Users should understand what is on display and why it is worth visiting.
+Phase 1 — Data Analysis (Database Labs 1–3)
 
-D. Provide information about the artist: Users should be able to learn contextual background without disrupting task flow.
+Phase 2 — Solution Design & Implementation (Web Dev Labs 1–5)
 
-E. Reduce friction and decision fatigue: This supports the objective of Phase 2, specifically, the site should minimize unnecessary navigation, redundant content, and unclear pathways, especially during ticket purchase and visit planning.
+- Plan your redesign using wireframes
 
-3. Information Architecture Options Considered
+- Build a multi-page website using HTML
 
-Before implementing the site, multiple information architecture (aka IA) approaches were considered to balance minimalism, clarity, and realism.
+- Improve layout, navigation, and responsiveness with CSS
 
-Option 1: Single-Page  Website
+- Add interactivity using JavaScript + the DOM
 
-All content is presented on a single page using clear visual sections, such as:
+- Embed media/maps and integrate at least one API
 
-- Tickets
+Goal: Build a redesign that is clearly tied to your Phase 1 findings.
 
-- Visit logistics
+How to think about “success”
 
-- Exhibition overview
+This project is not about perfect visuals. A strong submission emphasizes:
 
-- Artist information
+- Evidence-based reasoning (your design choices match your data)
 
-The pros to this
+- Clarity and usability (pages are organized and easy to navigate)
 
-- Minimal navigation
+- Functional correctness (working links, working code, responsive layout)
 
-- Shortest possible ticket funnel
+- A clear connection between “problem in the data” → “solution in the site”
 
-- Strong alignment with “reduce friction” goal
+What’s in this repository
 
-Cons
+You will work with a repository structure similar to:
 
-- Less realistic for larger museums
+/ (repo root)
+├── index.html
+├── views/
+├── static/
+├── wireframes/
+└── README.md
 
-- Requires strong visual hierarchy to avoid overwhelm
+Key folders
 
-Option 2: Task-Based Multi-Page Website, our selected initial approach. Moreover, each page corresponds directly to a user objective:
+- views/: all pages except index.html
 
-- Home (overview + primary CTA)
+- static/: CSS, JS, images, and other assets
 
-- Tickets
+- wireframes/: your saved wireframes (PNG/PDF or link file)
 
-- Plan Your Visit
-
-- Exhibitions
-
-- Artist and Explore
-
-Pros
-
-- Clear mapping between objectives and pages
-
-- Easy to reason about and assess
-
-- Familiar structure for students and users
-
-Cons
-
-- Requires consistent navigation discipline
-
-- Slightly more navigation steps than a single-page design
-
-Option 3: Hybrid Approach. A scroll-based home page for discovery and logistics paired with a dedicated Tickets page.
-
-Pros
-
-- Strong ticket prioritization
-
-- Reduced page hopping
-
-- Realistic compromise
-
-Cons
-
-- Slightly more complex to explain and implement
-
-4. Our current selected implementation from the zip file i provided
-
-So the current implementation follows Option 2 which is the task- based multi-page, as a clear, teachable baseline that helps map one primary objective to each page, maintain consistent navigation across the site, and keeps the “Buy Tickets” call-to-action visible and emphasized on every page. Ultimately, this structure can later be adjusted, such as collapsed into a single-page layout, depending on instructional goals or dataset insights.
-
+Important: Your wireframes should be included in the repo (uploaded into wireframes/) so your planning work is documented.
 
 
