@@ -55,18 +55,8 @@ This project is not about perfect visuals. A strong submission emphasizes:
 
 - A clear connection between “problem in the data” → “solution in the site”
 
-What’s in this repository
 
-You will work with a repository structure similar to:
-
-/ (repo root)
-├── index.html
-├── views/
-├── static/
-├── wireframes/
-└── README.md
-
-Key folders
+Key folders in this repository:
 
 - views/: all pages except index.html
 
